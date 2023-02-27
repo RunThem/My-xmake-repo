@@ -1,0 +1,13 @@
+diff --git a/include/qlibc/containers/qlisttbl.h b/include/qlibc/containers/qlisttbl.h
+index ece47f6..410af29 100644
+--- a/include/qlibc/containers/qlisttbl.h
++++ b/include/qlibc/containers/qlisttbl.h
+@@ -36,6 +36,8 @@
+ #define QLISTTBL_H
+ 
+ #include <stdlib.h>
++#include <sys/types.h>
++#include <stdio.h>
+ #include <stdbool.h>
+ #include <stdint.h>
+ 
