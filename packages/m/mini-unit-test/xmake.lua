@@ -20,9 +20,9 @@ package("mini-unit-test")
           test = [[
 #include <mut.h>
 void test(int argc, char** argv) {
-    mut_equal(5, 5);
+    mut_init("hello xmake");
 
-    mut_results();
+    mut_all_results();
 }
           ]]
         }, {configs = {languages = "c11"}, includes = "mut.h"}))
