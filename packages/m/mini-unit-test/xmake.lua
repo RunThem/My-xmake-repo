@@ -22,7 +22,7 @@ package("mini-unit-test")
 void test(int argc, char** argv) {
     mut_init("hello xmake");
 
-    mut_all_results();
+    mut_results();
 }
           ]]
         }, {configs = {languages = "c11"}, includes = "mut.h"}))
