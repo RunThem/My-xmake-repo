@@ -5,6 +5,8 @@ package("libu")
 
     add_urls("https://github.com/RunThem/libu.git")
 
+    add_deps('tbox', 'mimalloc')
+
     on_install(function (package)
         import("package.tools.xmake").install(package, {})
     end)
