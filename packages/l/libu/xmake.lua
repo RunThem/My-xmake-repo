@@ -5,7 +5,7 @@ package('libu', function()
 
   add_urls('https://github.com/RunThem/libu.git')
 
-  add_deps('mimalloc')
+  add_deps('mimalloc', 'tgc')
 
   on_install(function(package)
     import('package.tools.xmake').install(package, {})
